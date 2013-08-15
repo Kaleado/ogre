@@ -16,6 +16,19 @@ class Object:
     name        = str
     description = str
 
+class Tile(Object):
+    #woodFloor 
+    #woodWall
+    #glassWall
+    #stoneFloor
+    #stoneWall
+    #metalFloor
+    #metalWall
+    #waterFloor
+    #lavaFloor
+    isPassable = bool
+    isTransparent = bool
+    
 
 def handle_keys():
     global playerx, playery
