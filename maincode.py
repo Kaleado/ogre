@@ -17,6 +17,9 @@ class Object:
     description = str
 
 class Tile(Object):
+    def __init__(self, isPassable, isTransparent):
+     self.isPassable = isPassable
+     self.isTransparent = isTransparent
     #woodFloor 
     #woodWall
     #glassWall
