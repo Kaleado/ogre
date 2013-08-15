@@ -5,8 +5,18 @@ SCREEN_WIDTH = 80
 SCREEN_HEIGHT = 50
  
 LIMIT_FPS = 20  #20 frames-per-second maximum
- 
- 
+
+class Object:
+    tag         = []
+    burnCounter = int
+    x           = int
+    y           = int
+    character   = str
+    colour      = libtcod.white
+    name        = str
+    description = str
+
+
 def handle_keys():
     global playerx, playery
  
